@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Questions - Gagan Maddheshia</title>
+    <style>
+        :root {
+            --primary: #0070f3;
+            --bg: #f4f7f6;
+            --card-bg: #ffffff;
+            --text: #222222;
+            --subtext: #555555;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            margin: 0 0 10px 0;
+            color: #111;
+        }
+
+        p.subtitle {
+            color: var(--subtext);
+            margin: 0;
+        }
+
+        .section {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 0;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--bg);
+        }
+
+        ul.question-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        ul.question-list li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 12px;
+            color: var(--text);
+        }
+
+        ul.question-list li::before {
+            content: "•";
+            position: absolute;
+            left: 8px;
+            color: var(--primary);
+            font-size: 1.4rem;
+            line-height: 1;
+        }
+
+        ul.question-list li:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Interview Question Bank</h1>
+            <p class="subtitle">Comprehensive Master List for Gagan Maddheshia — Oracle Fusion Techno-Functional
+                Consultant</p>
+        </header>
+
+        <div class="section">
+            <h2 class="section-title">1. Core SQL & Technical Integration</h2>
+            <ul class="question-list">
+                <li>How do you structure complex SQL queries in Oracle Fusion to pull financial data across GL, AP, and
+                    AR tables?</li>
+                <li>What specific adjustments are required when migrating legacy queries (such as NFPS queries) into
+                    Oracle Fusion Cloud-compatible syntax?</li>
+                <li>How do you write and debug PL/SQL code or custom data models for enterprise reporting?</li>
+                <li>What performance tuning techniques do you apply to optimize long-running SQL queries in SQL
+                    Developer?</li>
+                <li>When migrating legacy queries to Oracle Fusion Cloud, how do you handle subqueries, database views,
+                    or legacy functions that are no longer supported in the Cloud database schema?</li>
+                <li>How do you address Cartesian products or duplicate records when writing SQL queries that join
+                    subledger tables (<code>AP_INVOICES_ALL</code>, <code>AR_PAYMENT_SCHEDULES_ALL</code>) to GL tables
+                    (<code>GL_JE_HEADERS</code>, <code>GL_JE_LINES</code>)?</li>
+                <li>How do you handle multi-currency conversions or historical rate calculations in custom GL/AP SQL
+                    data models?</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">2. Reporting & Automation (BI Publisher, OTBI, FRS, ESS)</h2>
+            <ul class="question-list">
+                <li>What is your step-by-step process for building a custom BI Publisher report, from designing the data
+                    model to formatting template layouts?</li>
+                <li>How do you evaluate whether a functional requirement should be built using OTBI versus BI Publisher?
+                </li>
+                <li>How do you set up and configure Enterprise Scheduler Service (ESS) jobs to automate report execution
+                    and manage output distribution schedules?</li>
+                <li>What role does Financial Reporting Studio (FRS) play in your reporting framework compared to OTBI?
+                </li>
+                <li>How do you implement bursting in BI Publisher for automated financial report delivery to specific
+                    business users?</li>
+                <li>What steps do you take when a BI Publisher report times out or exceeds the maximum memory threshold
+                    during execution?</li>
+                <li>How do you configure parameter triggers (such as <code>Before Report</code> or
+                    <code>After Report</code> triggers) in BI Publisher using PL/SQL packages?
+                </li>
+                <li>What are the key differences between subject areas in OTBI, and how do you handle cross-subject area
+                    reporting when data doesn't naturally link?</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">3. Oracle Financials Functional Setup & Support (GL, AP, AR)</h2>
+            <ul class="question-list">
+                <li>What core configurations and setups have you managed within the Oracle Fusion General Ledger (GL)
+                    module?</li>
+                <li>How do transactional subledger entries from AP and AR flow into the General Ledger in Oracle Fusion
+                    Cloud?</li>
+                <li>How do you handle incident management, ticketing (via ServiceNow/JIRA), and Root Cause Analysis
+                    (RCA) during Application Management Support (AMS)?</li>
+                <li>What steps do you take during report validation and data reconciliations to guarantee data accuracy
+                    for financial decision-making?</li>
+                <li>Walk through the period-close process in Oracle Fusion Financials. Where do reporting analysts
+                    typically get involved when financial statements do not balance?</li>
+                <li>How do you configure Data Access Sets and Role-Based Access Control (RBAC) to ensure users only see
+                    financial data for their assigned Business Units (BUs) or Ledgers in BI Publisher/OTBI reports?</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">4. Environment Management, SDLC & AI Certifications</h2>
+            <ul class="question-list">
+                <li>What is the structural difference between an MD50 (Functional Specification) and an MD70 (Technical
+                    Specification) document within RICE development?</li>
+                <li>How do you coordinate System Integration Testing (SIT) and User Acceptance Testing (UAT) with
+                    functional teams prior to production deployments?</li>
+                <li>How do you manage code and report migrations across different Fusion environments (e.g., from DEV to
+                    TEST and Production)?</li>
+                <li>How do you use Oracle Virtual Machines (VM instances) in your development and testing workflows for
+                    report deployments?</li>
+                <li>Based on your <em>Oracle Fusion AI Agent Studio Certified Developer</em> certification, how can AI
+                    agents be leveraged to optimize standard Oracle Cloud ERP workflows?</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">5. Behavioral, AMS & Career Growth</h2>
+            <ul class="question-list">
+                <li>Can you give an example of how you used ServiceNow/JIRA to track an SLA breach risk and how you
+                    communicated with business stakeholders to resolve it?</li>
+                <li>You received an "Exceeding Expectations" rating in your first year at Capgemini. What specific
+                    initiative or deliverable contributed most to that recognition?</li>
+                <li>With a Computer Science degree background, what made you choose Oracle Fusion Techno-Functional
+                    consulting, and how do you apply your core CS principles (data structures, algorithms) to enterprise
+                    ERP reporting?</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
