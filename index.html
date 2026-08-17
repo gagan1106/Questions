@@ -112,7 +112,9 @@
                 <b>Ans:</b> I structure complex Oracle Fusion financial queries using a layered design. I start with AP or AR transaction tables, use XLA/SLA as the accounting bridge, and then connect to GL journals. I prefer CTEs to separate transaction, accounting, and reporting logic. I also apply ledger and period filters early for performance and use the AP/AR → XLA → GL path for reconciliation and audit reporting.
                 </li>
                 <li>What specific adjustments are required when migrating legacy queries (such as NFPS queries) into
-                    Oracle Fusion Cloud-compatible syntax?</li>
+                    Oracle Fusion Cloud-compatible syntax?</br>
+                <b>Ans:</b> When migrating legacy queries to Oracle Fusion Cloud, I need to adapt to the new data model and ensure compatibility with the SLA/XLA engine. This involves updating join conditions, modifying column names, and adjusting logic to align with the cloud schema.
+                </li>
                 <li>How do you write and debug PL/SQL code or custom data models for enterprise reporting?</li>
                 <li>What performance tuning techniques do you apply to optimize long-running SQL queries in SQL
                     Developer?</li>
