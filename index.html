@@ -102,8 +102,15 @@
         <div class="section">
             <h2 class="section-title">1. Core SQL & Technical Integration</h2>
             <ul class="question-list">
-                <li>How do you structure complex SQL queries in Oracle Fusion to pull financial data across GL, AP, and
-                    AR tables?</li>
+                <li>How do you structure complex SQL queries in Oracle Fusion to pull financial data across GL, AP, and AR tables?</br>
+                <b>Note:</b> When building cross-functional Oracle Fusion Financials queries,  typically use a layered architecture rather than joining GL, AP, and AR tables directly. The key is understanding that Subledger Accounting (SLA/XLA) is the bridge between AP/AR transactions and General Ledger.
+
+                In Oracle Fusion Cloud Financials does not link AP or AR transactional tables directly to the General Ledger (GL_BALANCES or GL_JE_LINES). Instead, all subledgers pass data through the SLA engine.</br>
+
+                <img src="image.png" style="display: block; margin: 0 auto;"></br>
+
+                <b>Ans:</b> I structure complex Oracle Fusion financial queries using a layered design. I start with AP or AR transaction tables, use XLA/SLA as the accounting bridge, and then connect to GL journals. I prefer CTEs to separate transaction, accounting, and reporting logic. I also apply ledger and period filters early for performance and use the AP/AR → XLA → GL path for reconciliation and audit reporting.
+                </li>
                 <li>What specific adjustments are required when migrating legacy queries (such as NFPS queries) into
                     Oracle Fusion Cloud-compatible syntax?</li>
                 <li>How do you write and debug PL/SQL code or custom data models for enterprise reporting?</li>
